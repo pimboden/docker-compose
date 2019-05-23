@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+  rest-api:
+    build: ./Dotnet
+    volumes:
+    - ./Dotnet:/usr/src/app
+    ports:
+      - 9000:5080

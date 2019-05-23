@@ -5,7 +5,7 @@ https://automationrhapsody.com/build-a-rest-api-with-net-core-2-and-run-it-on-do
 Firt publish 
 dotnet publish --configuration=Release -o pub
 ##Compile
-docker build . -t dotnet-rest
+docker build . -t dotnet-rest --no-cache
 ##Run
 docker run -e Version=1.1 -p:9000:5080 dotnet-rest
 
